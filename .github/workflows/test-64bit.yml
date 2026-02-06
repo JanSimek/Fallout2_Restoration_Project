@@ -1,0 +1,160 @@
+name: test-64bit-compatibility
+
+on:
+  push:
+    branches: [64bit]
+  pull_request:
+    branches: [64bit]
+  workflow_dispatch:
+
+env:
+  SSLC_REPO: https://github.com/JanSimek/sslc.git
+  SSLC_BRANCH: 64bit
+  mpack_version: 4.4.8
+
+jobs:
+  compare-bytecode:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Restoration Project
+        uses: actions/checkout@v4
+
+      - name: Install 32-bit build dependencies
+        run: |
+          sudo dpkg --add-architecture i386
+          sudo apt-get update
+          sudo apt-get install -y gcc-multilib g++-multilib libc6-dev-i386 cmake p7zip
+
+      - name: Clone sslc repository
+        run: |
+          git clone --branch ${{ env.SSLC_BRANCH }} --depth 1 ${{ env.SSLC_REPO }} sslc
+
+      - name: Build sslc (32-bit)
+        run: |
+          cd sslc
+          mkdir build32
+          cd build32
+          CFLAGS="-m32" cmake ..
+          make -j$(nproc)
+          ./bin/sslc 2>&1 | head -3
+          cp bin/sslc ../sslc-32bit
+
+      - name: Build sslc (64-bit)
+        run: |
+          cd sslc
+          mkdir build64
+          cd build64
+          cmake -DFORCE_32BIT=OFF ..
+          make -j$(nproc)
+          ./bin/sslc 2>&1 | head -3
+          cp bin/sslc ../sslc-64bit
+
+      - name: Download sfall headers
+        run: |
+          mpack_file="modderspack_${{ env.mpack_version }}.7z"
+          mpack_url="https://sourceforge.net/projects/sfall/files/Modders%20pack/${mpack_file}/download"
+          curl -L -o "$mpack_file" "$mpack_url"
+          7zr x "$mpack_file" "scripting_docs/headers"
+          rm -rf scripts_src/sfall
+          mv "scripting_docs/headers" "scripts_src/sfall"
+          rm -rf scripting_docs "$mpack_file"
+
+      - name: Compile scripts with 32-bit sslc
+        run: |
+          mkdir -p output_32bit
+          COMPILE="$(pwd)/sslc/sslc-32bit"
+          chmod +x "$COMPILE"
+
+          src="$(pwd)/scripts_src"
+          dst="$(pwd)/output_32bit"
+          scripts_lst="$(pwd)/data/scripts/scripts.lst"
+
+          for d in $(ls "$src"); do
+            if [[ -d "$src/$d" && "$d" != "template" ]]; then
+              cd "$src/$d"
+              for f in $(ls 2>/dev/null | grep -i "\.ssl$" || true); do
+                int="$(echo "$f" | sed 's|\.ssl$|.int|')"
+                if grep -qi "^$int " "$scripts_lst" 2>/dev/null || [[ "$d" == "global" ]]; then
+                  gcc -E -x c -P -Werror -Wfatal-errors -o "${f}.tmp" "$f"
+                  "$COMPILE" -l -O2 -s -q -n "${f}.tmp" -o "$dst/$int"
+                  rm -f "${f}.tmp"
+                fi
+              done
+              cd "$src"
+            fi
+          done
+
+          echo "32-bit compiled $(ls output_32bit/*.int 2>/dev/null | wc -l) scripts"
+
+      - name: Compile scripts with 64-bit sslc
+        run: |
+          mkdir -p output_64bit
+          COMPILE="$(pwd)/sslc/sslc-64bit"
+          chmod +x "$COMPILE"
+
+          src="$(pwd)/scripts_src"
+          dst="$(pwd)/output_64bit"
+          scripts_lst="$(pwd)/data/scripts/scripts.lst"
+
+          for d in $(ls "$src"); do
+            if [[ -d "$src/$d" && "$d" != "template" ]]; then
+              cd "$src/$d"
+              for f in $(ls 2>/dev/null | grep -i "\.ssl$" || true); do
+                int="$(echo "$f" | sed 's|\.ssl$|.int|')"
+                if grep -qi "^$int " "$scripts_lst" 2>/dev/null || [[ "$d" == "global" ]]; then
+                  gcc -E -x c -P -Werror -Wfatal-errors -o "${f}.tmp" "$f"
+                  "$COMPILE" -l -O2 -s -q -n "${f}.tmp" -o "$dst/$int"
+                  rm -f "${f}.tmp"
+                fi
+              done
+              cd "$src"
+            fi
+          done
+
+          echo "64-bit compiled $(ls output_64bit/*.int 2>/dev/null | wc -l) scripts"
+
+      - name: Compare bytecode output
+        run: |
+          echo "=== Comparing 32-bit vs 64-bit bytecode ==="
+
+          MATCH=0
+          MISMATCH=0
+          MISSING=0
+          FAILED_FILES=""
+
+          for f in output_32bit/*.int; do
+            [ -f "$f" ] || continue
+            name=$(basename "$f")
+
+            if [ ! -f "output_64bit/$name" ]; then
+              echo "MISSING in 64-bit: $name"
+              MISSING=$((MISSING + 1))
+              continue
+            fi
+
+            if diff -q "$f" "output_64bit/$name" > /dev/null 2>&1; then
+              MATCH=$((MATCH + 1))
+            else
+              echo "MISMATCH: $name"
+              echo "  32-bit: $(md5sum "$f" | cut -d' ' -f1)"
+              echo "  64-bit: $(md5sum "output_64bit/$name" | cut -d' ' -f1)"
+              MISMATCH=$((MISMATCH + 1))
+              FAILED_FILES="$FAILED_FILES $name"
+            fi
+          done
+
+          echo ""
+          echo "=== Summary ==="
+          echo "Matching:   $MATCH"
+          echo "Mismatched: $MISMATCH"
+          echo "Missing:    $MISSING"
+          echo ""
+
+          if [ $MISMATCH -eq 0 ] && [ $MISSING -eq 0 ]; then
+            echo "SUCCESS: All bytecode files are identical!"
+            exit 0
+          else
+            echo "FAILURE: Bytecode mismatch detected!"
+            echo "Failed files:$FAILED_FILES"
+            exit 1
+          fi
