@@ -29,14 +29,14 @@
 {246}{}{Chả bao giờ mua được quần áo mới nữa.}
 {247}{}{Cần phải lên một kế hoạch mới...}
 {260}{}{Cám ơn đã trả giúp tôi!}
-{261}{}{Cậu đúng là cứu tinh đấy.}
+{261}{}{Cô đúng là cứu tinh đấy.}
 {262}{}{Tôi sẽ sớm có tiền trả thôi.}
 {263}{}{Chả mấy nữa mà tôi sẽ trúng to!}
-{264}{}{Cậu sẽ là người đầu tiên biết tin tôi trúng lớn đấy.}
+{264}{}{Cô sẽ là người đầu tiên biết tin tôi trúng lớn đấy.}
 {275}{}{Kế hoạch tổng thể nói chung là ổn!}
 {276}{}{Cám ơn đã cho vay! Tiền vào đây thì chắc như đinh đóng cột ấy!}
 {277}{}{Mấy cái bàn này khó nhai thật, nhưng đừng lo.}
-{278}{}{Có ngày tôi sẽ trúng lớn, nhờ cậu đấy.}
+{278}{}{Có ngày tôi sẽ trúng lớn, nhờ cô đấy.}
 {279}{}{Thời sắp đến rồi! Tôi có thể sờ được rồi đấy.}
 {280}{}{Hứa sẽ trả mà, thề!}
 {281}{}{Tôi sẽ sớm thắng quả thật to. Mùi tiền xóc lên tận óc rồi đây này.}
@@ -46,16 +46,16 @@
 {298}{}{Không có gì.}
 {299}{}{Uk!}
 {300}{}{Chào.}
-{310}{}{NÀY! Cậu đây rồi! Tìm mãi đấy! Xem bộ cánh mới này đi!}
+{310}{}{NÀY! Cô đây rồi! Tìm mãi đấy! Xem bộ cánh mới này đi!}
 {311}{}{Cám ơn lần nữa.}
 {312}{}{Nhìn đẹp đấy.}
 {313}{}{Trông như mứt ấy!}
 {314}{}{Yuk!}
 {315}{}{Hực.}
-{320}{}{Cám ơn, cám ơn nhiều lắm! Nhờ cậu mà tôi có đến bốn bộ như này!}
+{320}{}{Cám ơn, cám ơn nhiều lắm! Nhờ cô mà tôi có đến bốn bộ như này!}
 {321}{}{Vậy ông trúng lớn thật à?}
 {322}{}{Thế tiền của tôi đâu?}
-{330}{}{Cậu không thích bộ đồ mới của tôi à? Mà biết gì không, chắc vậy thật. Chính tôi cũng không thích. Đến lúc mua bộ khác rồi, bố giàu mà!}
+{330}{}{Cô không thích bộ đồ mới của tôi à? Mà biết gì không, chắc vậy thật. Chính tôi cũng không thích. Đến lúc mua bộ khác rồi, bố giàu mà!}
 {331}{}{Vậy ông trúng lớn thật à?}
 {332}{}{Thế tiền của tôi đâu?}
 {333}{}{Hừm.}
@@ -70,11 +70,11 @@
 {361}{}{Okay.}
 {362}{}{Không cần đâu.}
 {363}{}{Ừ.}
-{370}{}{Tôi mắc nợ mà. Cậu giúp tôi khi tôi đang vận đen. Để thay lời cảm ơn, tôi có thứ này cho cậu.}
+{370}{}{Tôi mắc nợ mà. Cô giúp tôi khi tôi đang vận đen. Để thay lời cảm ơn, tôi có thứ này cho cô.}
 {371}{}{Okay.}
 {372}{}{Không cần đâu.}
 {373}{}{Ừ.}
-{380}{}{Đây. [Fred đưa bạn $1000]. Hi vọng chỗ tiền này sẽ có ích. Tôi chắc là cậu sẽ tìm được chỗ để tiêu đấy.}
+{380}{}{Đây. [Fred đưa bạn $1000]. Hi vọng chỗ tiền này sẽ có ích. Tôi chắc là cô sẽ tìm được chỗ để tiêu đấy.}
 {381}{}{Thứ lỗi, tôi không thể nhận được.}
 {382}{}{Cám ơn.}
 {383}{}{Không có gì, nhưng tôi sẽ nhận.}
@@ -84,7 +84,7 @@
 {392}{}{Cám ơn nhiều lắm.}
 {393}{}{Không có gì, nhưng tôi sẽ nhận.}
 {394}{}{Yum.}
-{400}{}{Sao? Ồ, okay nếu cậu nhất định thế. Cám ơn nhiều lắm. Bảo trọng đấy.}
+{400}{}{Sao? Ồ, okay nếu cô nhất định thế. Cám ơn nhiều lắm. Bảo trọng đấy.}
 {401}{}{Chào.}
 {410}{}{Hả? Mày bú phải cỏ dại à? Trông thì cứ tưởng không nghiện ngập gì. Tránh xa tao ra.}
 {411}{}{Beat it!}

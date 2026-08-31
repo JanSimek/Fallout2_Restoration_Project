@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-24-17:41+0000\n"
-"PO-Revision-Date: 2026-05-08 19:55+0000\n"
+"PO-Revision-Date: 2026-07-22 15:46+0000\n"
 "Last-Translator: Andrea Bordoni <a.bordoni85@yahoo.it>\n"
 "Language-Team: Italian <https://hive.bgforge.net/projects/fallout/rp/it/>\n"
 "Language: italian\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.12.2\n"
+"X-Generator: Weblate 4.18.2\n"
 
 #: cuts/afailed.sve:10
 msgid "Chosen. The village dies. All of our futures die, too."
@@ -25195,10 +25195,6 @@ msgid "You bust the lock off the container."
 msgstr "Forzi il contenitore."
 
 #: dialog/containr.msg:177 dialog/door.msg:177
-#, fuzzy
-#| msgid ""
-#| "You strain your back while trying to bust the lock and\n"
-#| " take a point of damage."
 msgid ""
 "You strain your back while trying to bust the lock off and take a point of "
 "damage."
@@ -25207,18 +25203,12 @@ msgstr ""
 "punto di danno."
 
 #: dialog/containr.msg:178
-#, fuzzy
-#| msgid ""
-#| "You strain your back while trying to bust the lock and\n"
-#| " take "
 msgid ""
 "You strain your back while trying to bust the lock off and\n"
 " take "
 msgstr "Nel tentativo di forzare il contenitore, ti stiri la schiena e subisci "
 
 #: dialog/containr.msg:180 dialog/door.msg:180
-#, fuzzy
-#| msgid "You are too weak to bust the lock."
 msgid "You are too weak to bust the lock off."
 msgstr "Sei troppo debole per forzare la serratura."
 
@@ -25227,10 +25217,6 @@ msgid " busts the lock off the container."
 msgstr " forza il contenitore."
 
 #: dialog/containr.msg:182 dialog/door.msg:182
-#, fuzzy
-#| msgid ""
-#| " strains his back while trying to bust the lock and takes\n"
-#| " a point of damage."
 msgid ""
 " strains his back while trying to bust the lock off and takes a point of "
 "damage."
@@ -25239,16 +25225,10 @@ msgstr ""
 " e subisce un punto di danno."
 
 #: dialog/containr.msg:183 dialog/door.msg:183
-#, fuzzy
-#| msgid " strains his back while trying to bust the lock and takes "
 msgid " strains his back while trying to bust the lock off and takes "
 msgstr " nel tentativo di forzare la serratura si stira la schiena e subisce "
 
 #: dialog/containr.msg:186 dialog/door.msg:186
-#, fuzzy
-#| msgid ""
-#| " strains her back while trying to bust the lock and takes\n"
-#| " a point of damage."
 msgid ""
 " strains her back while trying to bust the lock off and takes a point of "
 "damage."
@@ -25257,8 +25237,6 @@ msgstr ""
 "punto di danno."
 
 #: dialog/containr.msg:187 dialog/door.msg:187
-#, fuzzy
-#| msgid " strains her back while trying to bust the lock and takes "
 msgid " strains her back while trying to bust the lock off and takes "
 msgstr " si stira la schiena nel tentativo di forzare la serratura e subisce "
 
@@ -42637,10 +42615,6 @@ msgid "The still has been destroyed."
 msgstr "Il distillatore e' stato distrutto."
 
 #: dialog/door.msg:178
-#, fuzzy
-#| msgid ""
-#| "You strain your back while trying to bust the lock and\n"
-#| " take "
 msgid "You strain your back while trying to bust the lock off and take "
 msgstr "Nel tentativo di forzare il contenitore, ti stiri la schiena e subisci "
 
@@ -111991,7 +111965,7 @@ msgstr "Eeeeeeeeek!"
 
 #: dialog/kchild.msg:166 dialog/mcchild.msg:166
 msgid "Mommy, mommy, mommy!"
-msgstr "Mammina mammina mammina!"
+msgstr "Mammina, mammina, mammina!"
 
 #: dialog/kchild.msg:168 dialog/mcchild.msg:168 dialog/nccomedi.msg:2001
 msgid "You stink!"

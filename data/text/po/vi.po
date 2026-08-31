@@ -4,15 +4,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-24-17:41+0000\n"
-"PO-Revision-Date: 2026-03-30 08:40+0000\n"
-"Last-Translator: Tung Pham <tung.pham@merctrans.vn>\n"
+"PO-Revision-Date: 2026-06-22 09:46+0000\n"
+"Last-Translator: anonymous <hive@bgforge.net>\n"
 "Language-Team: none\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.12.2\n"
+"X-Generator: Weblate 4.18.2\n"
 
 #: cuts/afailed.sve:10
 msgid "Chosen. The village dies. All of our futures die, too."
@@ -29501,310 +29501,326 @@ msgstr "Bạn thấy Fred ăn mặc rất bảnh."
 
 #: dialog/dcfred.msg:150
 msgid "He seems to be busy thinking about something."
-msgstr ""
+msgstr "Ông ta có vẻ đang mải nghĩ về việc gì đó."
 
 #: dialog/dcfred.msg:151
 msgid "He seems pretty happy with his fine new threads."
-msgstr ""
+msgstr "Ông ta có vẻ rất hạnh phúc với bộ cánh xịn mới."
 
 #: dialog/dcfred.msg:200
 msgid "I'm going to make it big some day."
-msgstr ""
+msgstr "Một ngày nào đó nhất định sẽ trúng to."
 
 #: dialog/dcfred.msg:201
 msgid "Oh, leave me alone. I'm busy."
-msgstr ""
+msgstr "Ồ, để tôi yên nào, đang bận."
 
 #: dialog/dcfred.msg:202
 msgid "The master plan..."
-msgstr ""
+msgstr "Kế hoạch tổng thể..."
 
 #: dialog/dcfred.msg:203
 msgid "Going to figure it out some day..."
-msgstr ""
+msgstr "Phải tính ra được..."
 
 #: dialog/dcfred.msg:204
 msgid "Why do I always lose?"
-msgstr ""
+msgstr "Sao lần đéo nào cũng thua thế nhỉ?"
 
 #: dialog/dcfred.msg:205
 msgid "Tables must be rigged."
-msgstr ""
+msgstr "Mấy cái bàn này giở trò chắc rồi."
 
 #: dialog/dcfred.msg:206
 msgid "...I'll own my own place some day."
-msgstr ""
+msgstr "... một ngày nào đó tôi sẽ có nhà riêng."
 
 #: dialog/dcfred.msg:207
 msgid "Going to get nice clothes."
-msgstr ""
+msgstr "Đi kiếm quần áo hịn nào."
 
 #: dialog/dcfred.msg:220
 msgid "Hey, man! It's late. Leave me alone."
-msgstr ""
+msgstr "Này, muộn lắm rồi. Để tôi yên."
 
 #: dialog/dcfred.msg:221
 msgid "No, I don't need any company."
-msgstr ""
+msgstr "Không, tôi không cần bạn bè gì hết."
 
 #: dialog/dcfred.msg:222
 msgid "Do you know what time it is?"
-msgstr ""
+msgstr "Có biết mấy giờ rồi không?"
 
 #: dialog/dcfred.msg:223
 msgid "I don't have anything."
-msgstr ""
+msgstr "Tôi chẳng có gì cả."
 
 #: dialog/dcfred.msg:224
 msgid "Bug me in the morning. I'm tired."
-msgstr ""
+msgstr "Sáng quay lại. Tôi mệt rồi."
 
 #: dialog/dcfred.msg:226
 msgid "No one's home."
-msgstr ""
+msgstr "Đéo có ai ở nhà đâu."
 
 #: dialog/dcfred.msg:227
 msgid "Can't talk. I'm getting ready for bed."
-msgstr ""
+msgstr "Đéo nói. Tôi sắp ngủ rồi."
 
 #: dialog/dcfred.msg:228
 msgid "Hey, lady! It's late. Leave me alone."
-msgstr ""
+msgstr "Này, quý cô! Muộn rồi đấy, để tôi yên."
 
 #: dialog/dcfred.msg:240
 msgid "No more money! Leave me alone."
-msgstr ""
+msgstr "Hết tiền rồi! Để tôi yên."
 
 #: dialog/dcfred.msg:241
 msgid "There's no work. What am I going to do?"
-msgstr ""
+msgstr "Chẳng có việc gì cả. Làm gì bây giờ?"
 
 #: dialog/dcfred.msg:242
 msgid "Don't tell me I owe someone else! Ahh!"
-msgstr ""
+msgstr "Đừng có nói là tôi còn nợ ai nữa! Ahh!"
 
 #: dialog/dcfred.msg:243
 msgid "I'm never going to make it big now."
-msgstr ""
+msgstr "Thế này thì trúng quả to thế nào giờ."
 
 #: dialog/dcfred.msg:244
 msgid "I'm so broke."
-msgstr ""
+msgstr "Nghèo vl."
 
 #: dialog/dcfred.msg:245
 msgid "Oh man, I need some cash."
-msgstr ""
+msgstr "Ôi má ơi, cần tiền mặt."
 
 #: dialog/dcfred.msg:246
 msgid "I'll never get to buy new clothes now."
-msgstr ""
+msgstr "Chả bao giờ mua được quần áo mới nữa."
 
 #: dialog/dcfred.msg:247
 msgid "Got to get a new master plan..."
-msgstr ""
+msgstr "Cần phải lên một kế hoạch mới..."
 
 #: dialog/dcfred.msg:260
 msgid "Thanks for covering for me!"
-msgstr ""
+msgstr "Cám ơn đã trả giúp tôi!"
 
 #: dialog/dcfred.msg:261
 msgid "You're a real life saver."
-msgstr ""
+msgstr "Cậu đúng là cứu tinh đấy."
 
 #: dialog/dcfred.msg:262
 msgid "I'll have the money for you soon."
-msgstr ""
+msgstr "Tôi sẽ sớm có tiền trả thôi."
 
 #: dialog/dcfred.msg:263
 msgid "I'll win it big anytime soon!"
-msgstr ""
+msgstr "Chả mấy nữa mà tôi sẽ trúng to!"
 
 #: dialog/dcfred.msg:264
 msgid "You're the first person I'll see when I win big."
-msgstr ""
+msgstr "Cậu sẽ là người đầu tiên biết tin tôi trúng lớn đấy."
 
 #: dialog/dcfred.msg:275
 msgid "Master plan is in action!"
-msgstr ""
+msgstr "Kế hoạch tổng thể nói chung là ổn!"
 
 #: dialog/dcfred.msg:276
 msgid "Thanks for the loan! Your money's in good hands!"
-msgstr ""
+msgstr "Cám ơn đã cho vay! Tiền vào đây thì chắc như đinh đóng cột ấy!"
 
 #: dialog/dcfred.msg:277
 msgid "Those tables sure are rough, but don't worry."
-msgstr ""
+msgstr "Mấy cái bàn này khó nhai thật, nhưng đừng lo."
 
 #: dialog/dcfred.msg:278
 msgid "I'll win big some day, thanks to you."
-msgstr ""
+msgstr "Có ngày tôi sẽ trúng lớn, nhờ cậu đấy."
 
 #: dialog/dcfred.msg:279
 msgid "I'm due any day! I can feel it."
-msgstr ""
+msgstr "Thời sắp đến rồi! Tôi có thể sờ được rồi đấy."
 
 #: dialog/dcfred.msg:280
 msgid "I'm going to pay you back, I swear!"
-msgstr ""
+msgstr "Hứa sẽ trả mà, thề!"
 
 #: dialog/dcfred.msg:281
 msgid "I'm going to win it big soon. I can smell it."
-msgstr ""
+msgstr "Tôi sẽ sớm thắng quả thật to. Mùi tiền xóc lên tận óc rồi đây này."
 
 #: dialog/dcfred.msg:295
 msgid "Huh? Do I know you? What do you want?"
-msgstr ""
+msgstr "Hả? Quen biết à? Muốn gì?"
 
 #: dialog/dcfred.msg:296
 msgid ""
 "Why do you keep bothering me? I don't even know you. Go bug someone else."
-msgstr ""
+msgstr "Sao cứ làm phiền tôi thế? Quen biết đéo gì. Đi chỗ khác chơi đi."
 
 #: dialog/dcfred.msg:297
 msgid "I'm here to collect some money you owe someone."
-msgstr ""
+msgstr "Tôi đến để thu tiền ông nợ người ta."
 
 #: dialog/dcfred.msg:299
 msgid "Uk!"
-msgstr ""
+msgstr "Uk!"
 
 #: dialog/dcfred.msg:310
 msgid ""
 "HEY! There you are! I've been looking all over for you! Check out these "
 "threads!"
-msgstr ""
+msgstr "NÀY! Cậu đây rồi! Tìm mãi đấy! Xem bộ cánh mới này đi!"
 
 #: dialog/dcfred.msg:311 dialog/gcfolk.msg:129
 msgid "Thanks again."
-msgstr ""
+msgstr "Cám ơn lần nữa."
 
 #: dialog/dcfred.msg:312
 msgid "Looking very nice."
-msgstr ""
+msgstr "Nhìn đẹp đấy."
 
 #: dialog/dcfred.msg:313
 msgid "You look like crap!"
-msgstr ""
+msgstr "Trông như mứt ấy!"
 
 #: dialog/dcfred.msg:314
 msgid "Yuk!"
-msgstr ""
+msgstr "Yuk!"
 
 #: dialog/dcfred.msg:320
 msgid ""
 "Thank you. Thank you very much! Thanks to you, I have four sets just like "
 "these!"
-msgstr ""
+msgstr "Cám ơn, cám ơn nhiều lắm! Nhờ cậu mà tôi có đến bốn bộ như này!"
 
 #: dialog/dcfred.msg:321
 msgid "So you won it big after all?"
-msgstr ""
+msgstr "Vậy ông trúng lớn thật à?"
 
 #: dialog/dcfred.msg:322
 msgid "So, where's my money?"
-msgstr ""
+msgstr "Thế tiền của tôi đâu?"
 
 #: dialog/dcfred.msg:330
 msgid ""
 "You don't like my threads? You know, I think you're right. I don't like them "
 "either. Time for some new ones - I can afford it!"
 msgstr ""
+"Cậu không thích bộ đồ mới của tôi à? Mà biết gì không, chắc vậy thật. Chính "
+"tôi cũng không thích. Đến lúc mua bộ khác rồi, bố giàu mà!"
 
 #: dialog/dcfred.msg:331
 msgid "So, you won it big after all?"
-msgstr ""
+msgstr "Vậy ông trúng lớn thật à?"
 
 #: dialog/dcfred.msg:332
 msgid "Where's my money?"
-msgstr ""
+msgstr "Thế tiền của tôi đâu?"
 
 #: dialog/dcfred.msg:333 dialog/dcslvgrt.msg:293 dialog/dcvicgrd.msg:351
 msgid "Hmph."
-msgstr ""
+msgstr "Hừm."
 
 #: dialog/dcfred.msg:340
 msgid ""
 "I was getting there! Won't even let me bask in my glory? I worked hard for "
 "this you know."
 msgstr ""
+"Sắp có rồi! Không để tôi tận hưởng chiến thắng à? Tôi phải cố mãi mới được "
+"đấy."
 
 #: dialog/dcfred.msg:341
 msgid "I know, I'm sorry."
-msgstr ""
+msgstr "Biết rồi, xin lỗi."
 
 #: dialog/dcfred.msg:342
 msgid "Screw that. Where's the money I covered you for?"
-msgstr ""
+msgstr "Mẹ nó. Tiền tôi trả nợ hộ ông đâu rồi?"
 
 #: dialog/dcfred.msg:343
 msgid "I don't give a crap. Where's my money?"
-msgstr ""
+msgstr "Đéo quan tâm. Tiền của tôi đâu?"
 
 #: dialog/dcfred.msg:350
 msgid ""
 "Fine. Here. [Fred gives you $500] There's a little extra for trusting me. "
 "Well, see you later. Thanks again."
 msgstr ""
+"Rồi. Đây. [Fred đưa bạn $500] Thêm một chút gọi là cảm ơn đã tin tưởng. Gặp "
+"lại sau nha. Cám ơn lần nữa."
 
 #: dialog/dcfred.msg:352
 msgid "What ever."
-msgstr ""
+msgstr "Sao cũng được."
 
 #: dialog/dcfred.msg:360
 msgid ""
 "Thanks a lot for covering for me. It really meant a lot to me, to be trusted "
 "by a complete stranger. Let me give you this."
 msgstr ""
+"Cám ơn nhiều vì đã trả giúp tôi. Việc đó thật sự có ý nghĩa với tôi đấy, "
+"được một người xa lạ tin tưởng. Để tôi đưa thứ này."
 
 #: dialog/dcfred.msg:362 dialog/dcfred.msg:372
 msgid "You shouldn't have."
-msgstr ""
+msgstr "Không cần đâu."
 
 #: dialog/dcfred.msg:370
 msgid ""
 "I owe you a lot. You trusted me when I was down on my luck. As a small "
 "gesture of gratitude I have something for you."
 msgstr ""
+"Tôi mắc nợ mà. Cậu giúp tôi khi tôi đang vận đen. Để thay lời cảm ơn, tôi có "
+"thứ này cho cậu."
 
 #: dialog/dcfred.msg:380
 msgid ""
 "Here. [Fred give you $1000.] I hope this helps. I'm sure you'll find "
 "someplace to spend it."
 msgstr ""
+"Đây. [Fred đưa bạn $1000]. Hi vọng chỗ tiền này sẽ có ích. Tôi chắc là cậu "
+"sẽ tìm được chỗ để tiêu đấy."
 
 #: dialog/dcfred.msg:381 dialog/dcfred.msg:391
 msgid "Sorry, I can't accept this."
-msgstr ""
+msgstr "Thứ lỗi, tôi không thể nhận được."
 
 #: dialog/dcfred.msg:383 dialog/dcfred.msg:393
 msgid "Not really, but I'll take it."
-msgstr ""
+msgstr "Không có gì, nhưng tôi sẽ nhận."
 
 #: dialog/dcfred.msg:384 dialog/dcfred.msg:394 dialog/ncangbis.msg:224
 msgid "Yum."
-msgstr ""
+msgstr "Yum."
 
 #: dialog/dcfred.msg:390
 msgid ""
 "Here. [Fred gives you $2000, 5 Fusion Cells, 5 Energy Cells, and a Plasma "
 "Grenade.] I hope this helps, at least a little."
 msgstr ""
+"Đây. [Fred đưa bạn $2000, 5 Pin Hợp Hạch, 5 Pin Năng Lượng và một quả lựu "
+"đạn Plasma]. Tôi hi vọng mấy thứ này sẽ có ích, dù chỉ một chút thôi."
 
 #: dialog/dcfred.msg:392 dialog/dcrebecc.msg:532
 msgid "Thank you very much."
-msgstr ""
+msgstr "Cám ơn nhiều lắm."
 
 #: dialog/dcfred.msg:400
 msgid ""
 "What? Well, okay, if you insist. Thank you so very much. Take good care of "
 "yourself."
-msgstr ""
+msgstr "Sao? Ồ, okay nếu cậu nhất định thế. Cám ơn nhiều lắm. Bảo trọng đấy."
 
 #: dialog/dcfred.msg:410
 msgid ""
 "What? You doing some strange drug? You don't look like a jethead. Get away "
 "from me you freak."
 msgstr ""
+"Hả? Mày bú phải cỏ dại à? Trông thì cứ tưởng không nghiện ngập gì. Tránh xa "
+"tao ra."
 
 #: dialog/dcfred.msg:411
 msgid "Beat it!"
@@ -263858,3 +263874,57 @@ msgstr ""
 
 #~ msgid "All right. Thanks"
 #~ msgstr "Được rồi. Cám ơn."
+
+msgctxt "female"
+msgid "You're a real life saver."
+msgstr "Cô đúng là cứu tinh đấy."
+
+msgctxt "female"
+msgid ""
+"Thank you. Thank you very much! Thanks to you, I have four sets just like "
+"these!"
+msgstr "Cám ơn, cám ơn nhiều lắm! Nhờ cô mà tôi có đến bốn bộ như này!"
+
+msgctxt "female"
+msgid ""
+"You don't like my threads? You know, I think you're right. I don't like them "
+"either. Time for some new ones - I can afford it!"
+msgstr ""
+"Cô không thích bộ đồ mới của tôi à? Mà biết gì không, chắc vậy thật. Chính "
+"tôi cũng không thích. Đến lúc mua bộ khác rồi, bố giàu mà!"
+
+msgctxt "female"
+msgid "You're the first person I'll see when I win big."
+msgstr "Cô sẽ là người đầu tiên biết tin tôi trúng lớn đấy."
+
+msgctxt "female"
+msgid ""
+"I owe you a lot. You trusted me when I was down on my luck. As a small "
+"gesture of gratitude I have something for you."
+msgstr ""
+"Tôi mắc nợ mà. Cô giúp tôi khi tôi đang vận đen. Để thay lời cảm ơn, tôi có "
+"thứ này cho cô."
+
+msgctxt "female"
+msgid "I'll win big some day, thanks to you."
+msgstr "Có ngày tôi sẽ trúng lớn, nhờ cô đấy."
+
+msgctxt "female"
+msgid ""
+"Here. [Fred give you $1000.] I hope this helps. I'm sure you'll find "
+"someplace to spend it."
+msgstr ""
+"Đây. [Fred đưa bạn $1000]. Hi vọng chỗ tiền này sẽ có ích. Tôi chắc là cô sẽ "
+"tìm được chỗ để tiêu đấy."
+
+msgctxt "female"
+msgid ""
+"HEY! There you are! I've been looking all over for you! Check out these "
+"threads!"
+msgstr "NÀY! Cô đây rồi! Tìm mãi đấy! Xem bộ cánh mới này đi!"
+
+msgctxt "female"
+msgid ""
+"What? Well, okay, if you insist. Thank you so very much. Take good care of "
+"yourself."
+msgstr "Sao? Ồ, okay nếu cô nhất định thế. Cám ơn nhiều lắm. Bảo trọng đấy."

@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-24-17:41+0000\n"
-"PO-Revision-Date: 2026-06-01 12:45+0000\n"
+"PO-Revision-Date: 2026-06-22 10:46+0000\n"
 "Last-Translator: tygyh <jonis9898@hotmail.com>\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -23626,7 +23626,7 @@ msgstr "Är du dum elle'?"
 
 #: dialog/dcflick.msg:203
 msgid "Whatchur problem, eh?"
-msgstr ""
+msgstr "Vad e de' me' dig, då?"
 
 #: dialog/dcflick.msg:204
 msgid "Get the hell outta heeya."
@@ -23675,6 +23675,8 @@ msgstr "Det var allt. Vi ses, Flick."
 #: dialog/dcflick.msg:260
 msgid "I'm a fuckin' provider, waddya think? I'm like a good Samurai-itan guy."
 msgstr ""
+"Jag är en jävla försörjare, va' trodde 'u? Jag är som en god samuraj-it, "
+"eller nåt."
 
 #: dialog/dcflick.msg:261
 msgid "Say what?"
@@ -23794,19 +23796,24 @@ msgstr "Morsan driver ett matställe på östra sidan av stan. Precis efter kyrk
 
 #: dialog/dcflick.msg:381
 msgid "Thanks, What about that Metzger fellow that's got Vic?"
-msgstr ""
+msgstr "Tack, Hur blev det med den där Metzger som har tagit Vic?"
 
 #: dialog/dcflick.msg:400
 msgid "That's right. Metzger, that stronzo, he's dead. I don't know what happen to Vic."
 msgstr ""
+"Det stämmer. Metzger, den där stronzon, han är död. Jag vet inte vad som har "
+"hänt med Vic."
 
 #: dialog/dcflick.msg:401
 msgid "That Metzger, he's a real rompiballe, that one. Runs the Slaver's Guild. East side of town, just north of Momma's. Anyhow, he got Vic, I know."
 msgstr ""
+"Den där Metzger, han är en riktig rompiballe, den jäveln. Han driver "
+"Slavhandlargillet. På stadens östra sida, precis norr om Morsans. Hur som "
+"helst, han har tagit Vic, det vet jag."
 
 #: dialog/dcflick.msg:402
 msgid "Thanks, now what about Momma?"
-msgstr ""
+msgstr "Tack, men hur är det med Morsan då?"
 
 #: dialog/dcflick.msg:410
 msgid ""
@@ -23859,15 +23866,15 @@ msgstr ""
 
 #: dialog/dcflick.msg:461
 msgid "Alright, let's see what you have in stock then."
-msgstr ""
+msgstr "Okej, då ska vi väl se vad du har i lager."
 
 #: dialog/dcflick.msg:462
 msgid "I think I have all I need. Goodbye."
-msgstr ""
+msgstr "Jag tror att jag har allt jag behöver. Hej då."
 
 #: dialog/dcflick.msg:463
 msgid "I think I'll stay... and kick your ass."
-msgstr ""
+msgstr "Jag tror jag stannar kvar... och ger dig en ordentlig omgång."
 
 #: dialog/dcflick.msg:470
 msgid ""
@@ -23886,27 +23893,27 @@ msgstr ""
 
 #: dialog/dcflick.msg:481
 msgid "Let me take another look."
-msgstr ""
+msgstr "Låt mig titta en gång till."
 
 #: dialog/dcflick.msg:482
 msgid "That should do it. Goodbye Flick."
-msgstr ""
+msgstr "Det borde räcka. Hej då, Flick."
 
 #: dialog/dcfranki.msg:100
 msgid "You see the owner of The Hole."
-msgstr ""
+msgstr "Du ser ägaren till Hålet."
 
 #: dialog/dcfranki.msg:101
 msgid "You see Frankie, owner of The Hole."
-msgstr ""
+msgstr "Du ser Frankie, ägaren till Hålet."
 
 #: dialog/dcfranki.msg:150
 msgid "This appears to be the owner of this place."
-msgstr ""
+msgstr "Det här verkar vara ägaren till det här stället."
 
 #: dialog/dcfranki.msg:151
 msgid "This is Frankie. He owns this joint."
-msgstr ""
+msgstr "Det här är Frankie. Han äger det här stället."
 
 #: dialog/dcfranki.msg:153
 msgid ""
@@ -33431,15 +33438,17 @@ msgstr "Grrrr."
 
 #: dialog/dctyler.msg:300
 msgid "Beat it, tough guy, before I get angry on Your face."
-msgstr ""
+msgstr "Stick iväg, tuffing, innan jag blir arg på Ditt ansikte."
 
 #: dialog/dctyler.msg:301
 msgid "Beat it, bitch. Metzger wouldn't have sent a woman anyhow, so take a hike."
 msgstr ""
+"Stick härifrån, din subba. Metzger skulle ändå aldrig ha skickat en kvinna, "
+"så dra åt helvete."
 
 #: dialog/dctyler.msg:302
 msgid "Bitch? I'll show you what this bitch can do."
-msgstr ""
+msgstr "\"Subba\"? Jag ska visa dig vad den här \"Subban\" går för."
 
 #: dialog/dctyler.msg:304
 msgid "[Leave]"
@@ -33447,15 +33456,15 @@ msgstr "[Lämna]"
 
 #: dialog/dctyler.msg:320
 msgid "That's nice. Me Tyler. Me go bye bye."
-msgstr ""
+msgstr "Vad trevligt. Jag Tyler. Jag hejdå nu."
 
 #: dialog/dctyler.msg:321
 msgid "Ur."
-msgstr ""
+msgstr "Ör."
 
 #: dialog/dctyler.msg:330
 msgid "Beat it, freak."
-msgstr ""
+msgstr "Stick iväg, miffo."
 
 #: dialog/dctyler.msg:331
 msgid "Sukyu!"
@@ -33467,7 +33476,7 @@ msgstr ""
 
 #: dialog/dctyler.msg:340
 msgid "I don't think so. Now beat it."
-msgstr ""
+msgstr "Det tror jag inte. Stick nu."
 
 #: dialog/dctyler.msg:342
 msgid "But!"
@@ -33475,27 +33484,28 @@ msgstr "Men!"
 
 #: dialog/dctyler.msg:350
 msgid "Yeah, I bet you are. Who sent you?"
-msgstr ""
+msgstr "Ja, det tror jag att du är. Vem skickade dig?"
 
 #: dialog/dctyler.msg:351
 msgid "Yeah, you said that already, fuck head. Who sent you?"
-msgstr ""
+msgstr "Ja, det har du redan sagt, rövhatt. Vem har skickat dig?"
 
 #: dialog/dctyler.msg:352
 msgid "Who do you think, moron? Now stop dicking around and let me in."
 msgstr ""
+"Vem tror du det är, din idiot? Sluta nu att jävlas med mig och släpp in mig."
 
 #: dialog/dctyler.msg:353
 msgid "The pink panther."
-msgstr ""
+msgstr "Den rosa pantern."
 
 #: dialog/dctyler.msg:354
 msgid "Okay, you'll regret that."
-msgstr ""
+msgstr "Okej, det där kommer du att ångra."
 
 #: dialog/dctyler.msg:360
 msgid "The what? Get outta here!"
-msgstr ""
+msgstr "Vadå för något? Stick härifrån!"
 
 #: dialog/dctyler.msg:361
 msgid "But..."
@@ -33503,20 +33513,20 @@ msgstr "Men..."
 
 #: dialog/dctyler.msg:370
 msgid "Now what the hell does the boss want? Another stupid fucking inspection?"
-msgstr ""
+msgstr "Vad fan är det chefen vill nu? Ännu en jävla inspektion?"
 
 #: dialog/dctyler.msg:372 dialog/qcgensci.msg:117 dialog/rcdrjohn.msg:155
 #: dialog/rclou.msg:109
 msgid "What now?"
-msgstr ""
+msgstr "Vad nu då?"
 
 #: dialog/dctyler.msg:374 dialog/ocgoris.msg:110
 msgid "Sorry, gotta go."
-msgstr ""
+msgstr "Ursäkta, måste dra."
 
 #: dialog/dctyler.msg:375
 msgid "Uk."
-msgstr ""
+msgstr "Uk."
 
 #: dialog/dctyler.msg:376
 msgid "Lub?"
@@ -33525,6 +33535,9 @@ msgstr ""
 #: dialog/dctyler.msg:380
 msgid "Actually, great! Almost forgot - a buddy of mine won it big at the tables and he's sharing the wealth, if you know what I mean."
 msgstr ""
+"Det är faktiskt toppen! Jag glömde nästan – en kompis till mig har vunnit "
+"stort vid spelborden och han delar med sig av vinsten, om du förstår vad jag "
+"menar."
 
 #: dialog/dctyler.msg:381
 msgid "Pretty fucking bored. I hate guarding - but, hey, things can't be that bad. A buddy of mine won it big at the tables and he's sharing the wealth, if you know what I mean."

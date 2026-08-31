@@ -4,15 +4,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-24-17:41+0000\n"
-"PO-Revision-Date: 2026-03-15 12:40+0000\n"
-"Last-Translator: Emanuel Komínek <drake127@planescape.cz>\n"
+"PO-Revision-Date: 2026-08-22 14:46+0000\n"
+"Last-Translator: alium <info@aloisnespor.info>\n"
 "Language-Team: Czech <https://hive.bgforge.net/projects/fallout/rp/cs/>\n"
 "Language: czech\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.12.2\n"
+"X-Generator: Weblate 4.18.2\n"
 
 #: cuts/afailed.sve:10
 msgid "Chosen. The village dies. All of our futures die, too."
@@ -185,7 +185,7 @@ msgstr "Jen diky odvaze tohoto \"Zakladatele\", byl dabel znicen."
 
 #: cuts/credits.sve:1440
 msgid "But in so doing, he lost many of his friends and suffered greatly,"
-msgstr "Ale jak už to bývá, on sám ztratil přátele a velmi trpěl."
+msgstr "Ale jak už to bývá, on sám ztratil přátele a velmi trpěl,"
 
 #: cuts/credits.sve:1500
 msgid "sacrificing much of himself to save the world."
@@ -203,7 +203,7 @@ msgstr "Do exilu."
 
 #: cuts/credits.sve:1685
 msgid "In confronting that which they feared,"
-msgstr "Naplnilo se totiž to, čeho se všichni báli."
+msgstr "Naplnilo se totiž to, čeho se všichni báli,"
 
 #: cuts/credits.sve:1740
 msgid "he had become something else in their eyes... and no longer their champion."
@@ -263,7 +263,7 @@ msgstr "Nemocné děti."
 
 #: cuts/elder.sve:370
 msgid "There is hope, however. A slim hope that few know of."
-msgstr "Avšak je zde naděje. Nepatrná naděje, o které ví jen několik z nás. "
+msgstr "Avšak je zde naděje. Nepatrná naděje, o které ví jen několik z nás."
 
 #: cuts/elder.sve:470
 msgid "The old disks speak of an item called the Garden of Eden Creation Kit."
@@ -1034,7 +1034,7 @@ msgstr "Tvuj pribeh zkoncil."
 #. indexed_txt
 #: cuts/nar_8.txt:1
 msgid "You fought valiantly, but to no avail.  "
-msgstr "Bojoval jsi statecne, ale neuspel jsi."
+msgstr "Bojoval jsi statečne, ale neuspěl jsi.  "
 
 #. indexed_txt
 #: cuts/nar_8.txt:2
@@ -1249,7 +1249,7 @@ msgstr "Zemřel jsi."
 #. indexed_txt
 #: cuts/nar_dth4.txt:2
 msgid "Your village is lost, doomed to die of starvation."
-msgstr "Tvá vesnice je ztracená, odsouzená k smrti hladem"
+msgstr "Tvá vesnice je ztracená, odsouzená k smrti hladem."
 
 #. indexed_txt
 #: cuts/nar_dth5.txt:2
@@ -2116,7 +2116,7 @@ msgstr "Máme problem. A to pořádný."
 
 #: cuts/ovrintro.sve:117
 msgid "The controller chip for our water purification system"
-msgstr "Kontrolní čip v naší čističce vody "
+msgstr "Kontrolní čip v naší čističce vody"
 
 #: cuts/ovrintro.sve:165
 msgid "has given up the ghost."
@@ -2124,7 +2124,7 @@ msgstr "přestal fungovat."
 
 #: cuts/ovrintro.sve:205
 msgid "Can't make another one and the process is too complicated"
-msgstr "Nedokážeme vyrobit jiný a samotný proces je příliš komplikovaný, "
+msgstr "Nedokážeme vyrobit jiný a samotný proces je příliš komplikovaný,"
 
 #: cuts/ovrintro.sve:250
 msgid "for a work around system."
@@ -2152,7 +2152,7 @@ msgstr "Musiš jít a najít pro nas jiny čip."
 
 #: cuts/ovrintro.sve:615
 msgid "We estimate we have four to five months"
-msgstr "Odhadujeme, ze zbývá 4 az 5 měsíců, "
+msgstr "Odhadujeme, ze zbývá 4 az 5 měsíců,"
 
 #: cuts/ovrintro.sve:650
 msgid "before the Vault runs out of water."
@@ -2176,7 +2176,7 @@ msgstr "A...hlavně na sebe dávej pozor, ano?"
 
 #: cuts/tanker.sve:220
 msgid "Inscription on the mug: \"If it ain't broke, don't fix it.\""
-msgstr "Nápis na hrnku: „Co funguje, do toho nevrtej.“"
+msgstr "Nápis na hrnku: „Pokud to není rozbité, neopravuj to“"
 
 #: cuts/tanker.sve:295
 msgid "PORT INNER"
@@ -2188,7 +2188,7 @@ msgstr "PLNOU PAROU VPŘED"
 
 #: cuts/tanker.sve:1975
 msgid "POSEIDON OIL IFF TRANSPONDER RECOGNIZED"
-msgstr "IFF TRANSPONDÉR POSEIDON OIL ROZPOZNÁN"
+msgstr "TRANSPONDÉR POSEIDON OIL IFF BYL ROZPOZNÁN"
 
 #: cuts/tanker.sve:2020
 msgid "DOCKING COMPLETE."
@@ -19660,26 +19660,19 @@ msgid "You bust the lock off the container."
 msgstr "Podařilo se ti vypáčit zámek kontejneru."
 
 #: dialog/containr.msg:177 dialog/door.msg:177
-#, fuzzy
-#| msgid ""
-#| "You strain your back while trying to bust the lock and\n"
-#| " take a point of damage."
 msgid "You strain your back while trying to bust the lock off and take a point of damage."
-msgstr "Při páčení zámku sis poranil záda a to ti způsobilo jeden bod poškození."
+msgstr ""
+"Při pokusu o vylomení zámku si poraníš záda a utrpíš jeden bod poškození."
 
 #: dialog/containr.msg:178
-#, fuzzy
-#| msgid ""
-#| "You strain your back while trying to bust the lock and\n"
-#| " take "
 msgid ""
 "You strain your back while trying to bust the lock off and\n"
 " take "
-msgstr "Při páčení zámku sis poranil záda a to ti způsobilo poškození za "
+msgstr ""
+"Při páčení zámku sis poranil záda a\n"
+" to ti způsobilo poškození za "
 
 #: dialog/containr.msg:180 dialog/door.msg:180
-#, fuzzy
-#| msgid "You are too weak to bust the lock."
 msgid "You are too weak to bust the lock off."
 msgstr "Na vypáčení tohoto zámku nemáš dostatečnou sílu."
 
@@ -19688,32 +19681,28 @@ msgid " busts the lock off the container."
 msgstr " se podařilo vypáčit zámek kontejneru."
 
 #: dialog/containr.msg:182 dialog/door.msg:182
-#, fuzzy
-#| msgid ""
-#| " strains his back while trying to bust the lock and takes\n"
-#| " a point of damage."
 msgid " strains his back while trying to bust the lock off and takes a point of damage."
-msgstr " si poranil záda, když se pokoušel vypáčit zámek, což mu způsobilo jeden bod poškození."
+msgstr ""
+" si poranil záda, když se pokoušel vypáčit zámek,\n"
+" což mu způsobilo jeden bod poškození."
 
 #: dialog/containr.msg:183 dialog/door.msg:183
-#, fuzzy
-#| msgid " strains his back while trying to bust the lock and takes "
 msgid " strains his back while trying to bust the lock off and takes "
-msgstr " si poranil záda, když se pokoušel vypáčit zámek, což mu způsobilo poškození za "
+msgstr ""
+" si poranil záda, když se pokoušel vypáčit zámek,\n"
+" což mu způsobilo poškození za "
 
 #: dialog/containr.msg:186 dialog/door.msg:186
-#, fuzzy
-#| msgid ""
-#| " strains her back while trying to bust the lock and takes\n"
-#| " a point of damage."
 msgid " strains her back while trying to bust the lock off and takes a point of damage."
-msgstr " si poranila záda, když se pokoušela vypáčit zámek, což jí způsobilo jeden bod poškození."
+msgstr ""
+" si poranila záda, když se pokoušela vypáčit zámek,\n"
+" což jí způsobilo jeden bod poškození."
 
 #: dialog/containr.msg:187 dialog/door.msg:187
-#, fuzzy
-#| msgid " strains her back while trying to bust the lock and takes "
 msgid " strains her back while trying to bust the lock off and takes "
-msgstr " si poranila záda, když se pokoušela vypáčit zámek, což jí způsobilo poškození za "
+msgstr ""
+" si poranila záda, když se pokoušela vypáčit zámek,\n"
+" což jí způsobilo poškození za "
 
 #: dialog/containr.msg:189 dialog/cstouch.msg:189
 msgid "You deftly lock the container."
@@ -27572,7 +27561,7 @@ msgstr "Díky. Musím odejít. Nashle."
 
 #: dialog/dcmetzge.msg:1360
 msgid " for her. How about it?"
-msgstr ". Co ty na to?"
+msgstr " Co ty na to?"
 
 #: dialog/dcmetzge.msg:1540
 msgid ". Pretty fucking good job."
@@ -34868,10 +34857,6 @@ msgid "The still has been destroyed."
 msgstr "Destilátor byl zničen."
 
 #: dialog/door.msg:178
-#, fuzzy
-#| msgid ""
-#| "You strain your back while trying to bust the lock and\n"
-#| " take "
 msgid "You strain your back while trying to bust the lock off and take "
 msgstr "Při páčení zámku sis poranil záda a to ti způsobilo poškození za "
 
@@ -39240,7 +39225,7 @@ msgstr "Uzdravování $"
 
 #: dialog/ecnomsha.msg:150
 msgid "and I will combine the two for you."
-msgstr " a já je pro tebe smíchám."
+msgstr "a já vám ty dvě věci spojím."
 
 #: dialog/ecoutcst.msg:100
 msgid "Do not run."
@@ -46558,7 +46543,7 @@ msgstr "Nejsem vetřelec a právě teď musím odejít."
 
 #: dialog/epac4.msg:204
 msgid ", and I'm not trying to intrude, I'm just exploring."
-msgstr " a nesnažím se narušovat, jen prozkoumávám."
+msgstr ", a nesnažím se narušovat, jen prozkoumávám."
 
 #: dialog/epac4.msg:210
 msgid "Exploring!? Exploring... MY... EPA!? How dare you have the audacity to break in here and just casually wander around! Vollidiot! I have a half a mind to arrest you and toss your ass in the petting zoo -- give them freakshows a real feast!"
@@ -58647,7 +58632,7 @@ msgstr "Rád tě zase vidím. Co potřebuješ?"
 
 #: dialog/fcronmey.msg:155
 msgid ", and unless I miss my bet, that's where your friends are, too."
-msgstr " a moc bych za to nedal, že tam jsou i tví přátelé."
+msgstr ", a moc bych za to nedal, že tam jsou i tví přátelé."
 
 #: dialog/fcronmey.msg:200
 msgid "What old sub?"
@@ -83626,7 +83611,7 @@ msgstr "Ahoj bedýnko, já "
 
 #: dialog/iisafe.msg:203
 msgid " Hoo you?"
-msgstr ". Kdo ty?"
+msgstr " Kdo ty?"
 
 #: dialog/iisafe.msg:204 dialog/iisafe.msg:325
 msgid "Twist its nose"
@@ -83778,7 +83763,7 @@ msgstr "Halóóóó? Já "
 
 #: dialog/iisafe.msg:324
 msgid " Hoo yoo?"
-msgstr ". Kdo ty?"
+msgstr " Kdo ty?"
 
 #: dialog/iisafe.msg:340
 msgid "With surgical precision, you disarm the fuse and pull the dynamite from beneath the dirt. The trap is now disarmed."
@@ -138131,11 +138116,9 @@ msgid "Bad Mojo"
 msgstr "Bad Mojo"
 
 #: dialog/newr1.msg:465
-#, fuzzy
-#| msgid "Tank"
 msgctxt "made_man_name"
 msgid "Tank"
-msgstr "Tank"
+msgstr "Nádrž"
 
 #: dialog/newr1.msg:466 game/trait.msg:101
 msgid "Bruiser"
@@ -145933,10 +145916,10 @@ msgid "This looks to be the computer that controls a door nearby."
 msgstr "Vypadá to jako počítač ovládající nedaleké dveře."
 
 #: dialog/patchinf.msg:100 dialog/patchinf.msg:101
-#, fuzzy
-#| msgid "You are running killap's Fallout 2 Restoration Project. Version 2.3.3u. Thanks for installing!"
 msgid "You are running RPU v2.x.x, based on killap's F2 Restoration Project. Thanks for installing!"
-msgstr "Používáte Killapův Fallout 2 Restoration Project v češtině. Verze 2.3.3. Děkujeme za instalaci!"
+msgstr ""
+"Používáte RPU v2.x.x, založenou na projektu F2 Restoration Project od "
+"killapa. Děkujeme za instalaci!"
 
 #: dialog/pi8ball.msg:200 dialog/zi8ball.msg:200
 msgid "Outlook good."
@@ -187176,11 +187159,9 @@ msgid "Well, if you had access to our Vault Central Computer, you might be able 
 msgstr "No, kdybyste měl přístup k našemu centrálnímu počítači, možná byste našel nějaké zmínky o jiných Vaultech. Ale pouze Občané města mohou vstoupit do Vaultu."
 
 #: dialog/vcrandal.msg:146
-#, fuzzy
-#| msgid "Tanks"
 msgctxt "low_iq_thank_you"
 msgid "Tanks"
-msgstr "Dík."
+msgstr "Nádrže"
 
 #: dialog/vcrandal.msg:149
 msgid "Hey there, welcome back. Anything I can do for you?"
@@ -202087,148 +202068,106 @@ msgid "peppered with fragments"
 msgstr "byla zasypána střepinami"
 
 #: game/combat.msg:250
-#, fuzzy
-#| msgid "knocked out"
 msgctxt "female_pc"
 msgid "knocked out"
-msgstr "byla knokautována"
+msgstr "vyřazena"
 
 #: game/combat.msg:251
-#, fuzzy
-#| msgid "knocked down"
 msgctxt "female_pc"
 msgid "knocked down"
 msgstr "byla sražena k zemi"
 
 #: game/combat.msg:252
-#, fuzzy
-#| msgid "crippled your left leg"
 msgctxt "female_pc"
 msgid "crippled your left leg"
 msgstr "tvá levá noha byla zmrzačena"
 
 #: game/combat.msg:253
-#, fuzzy
-#| msgid "crippled your right leg"
 msgctxt "female_pc"
 msgid "crippled your right leg"
 msgstr "tvá pravá noha byla zmrzačena"
 
 #: game/combat.msg:254
-#, fuzzy
-#| msgid "crippled your left arm"
 msgctxt "female_pc"
 msgid "crippled your left arm"
 msgstr "tvá levá ruka byla zmrzačena"
 
 #: game/combat.msg:255
-#, fuzzy
-#| msgid "crippled your right arm"
 msgctxt "female_pc"
 msgid "crippled your right arm"
 msgstr "tvá pravá ruka byla zmrzačena"
 
 #: game/combat.msg:256
-#, fuzzy
-#| msgid "blinded"
 msgctxt "female_pc"
 msgid "blinded"
 msgstr "byla oslepena"
 
 #: game/combat.msg:257
-#, fuzzy
-#| msgid "were killed"
 msgctxt "female_pc"
 msgid "were killed"
-msgstr "byla jsi zabita"
+msgstr "byla zabita"
 
 #: game/combat.msg:258
-#, fuzzy
-#| msgid "hit"
 msgctxt "female_pc"
 msgid "hit"
 msgstr "byla zasažena"
 
 #: game/combat.msg:261
-#, fuzzy
-#| msgid "had your armor bypassed"
 msgctxt "female_pc"
 msgid "had your armor bypassed"
 msgstr "rána prošla tvou zbrojí"
 
 #: game/combat.msg:262
-#, fuzzy
-#| msgid "your weapon exploded"
 msgctxt "female_pc"
 msgid "your weapon exploded"
 msgstr "zbraň ti vybuchla v rukou"
 
 #: game/combat.msg:263
-#, fuzzy
-#| msgid "destroyed your weapon"
 msgctxt "female_pc"
 msgid "destroyed your weapon"
 msgstr "tvá zbraň byla zničena"
 
 #: game/combat.msg:264
-#, fuzzy
-#| msgid "dropped your weapon"
 msgctxt "female_pc"
 msgid "dropped your weapon"
 msgstr "zbraň ti upadla na zem"
 
 #: game/combat.msg:265
-#, fuzzy
-#| msgid "lost your next turn"
 msgctxt "female_pc"
 msgid "lost your next turn"
-msgstr "další tah se bude vzpamatovávat."
+msgstr "přišla jsi o svůj další tah"
 
 #: game/combat.msg:266
-#, fuzzy
-#| msgid "hit yourself"
 msgctxt "female_pc"
 msgid "hit yourself"
 msgstr "zasáhla jsi sama sebe"
 
 #: game/combat.msg:267
-#, fuzzy
-#| msgid "lost the rest of your ammo"
 msgctxt "female_pc"
 msgid "lost the rest of your ammo"
-msgstr "se ztrátou zbývající munice"
+msgstr "ztratila jsi zbývající munici"
 
 #: game/combat.msg:268
-#, fuzzy
-#| msgid "fired a dud shot"
 msgctxt "female_pc"
 msgid "fired a dud shot"
 msgstr "vystřelila naprázdno"
 
 #: game/combat.msg:269
-#, fuzzy
-#| msgid "hurt yourself"
 msgctxt "female_pc"
 msgid "hurt yourself"
 msgstr "zranila jsi sama sebe"
 
 #: game/combat.msg:270
-#, fuzzy
-#| msgid "hit randomly"
 msgctxt "female_pc"
 msgid "hit randomly"
-msgstr "náhodně zasáhla"
+msgstr "zasáhla náhodně"
 
 #: game/combat.msg:271
-#, fuzzy
-#| msgid "crippled a random limb"
 msgctxt "female_pc"
 msgid "crippled a random limb"
 msgstr "jedna z jejích končetin byla zmrzačena"
 
 #: game/combat.msg:272
-#, fuzzy
-#| msgid "peppered with fragments"
 msgctxt "female_pc"
 msgid "peppered with fragments"
 msgstr "byla zasypána střepinami"
@@ -202286,15 +202225,11 @@ msgid "hurt himself"
 msgstr "zranil sám sebe"
 
 #: game/combat.msg:400
-#, fuzzy
-#| msgid "knocked out"
 msgctxt "female_npc"
 msgid "knocked out"
 msgstr "byla knokautována"
 
 #: game/combat.msg:401
-#, fuzzy
-#| msgid "knocked down"
 msgctxt "female_npc"
 msgid "knocked down"
 msgstr "byla sražena k zemi"
@@ -202316,22 +202251,16 @@ msgid "crippled her right arm"
 msgstr "její pravá ruka byla zmrzačena"
 
 #: game/combat.msg:406
-#, fuzzy
-#| msgid "blinded"
 msgctxt "female_npc"
 msgid "blinded"
 msgstr "byla oslepena"
 
 #: game/combat.msg:407
-#, fuzzy
-#| msgid "was killed"
 msgctxt "female_npc"
 msgid "was killed"
-msgstr "byl zabit"
+msgstr "byla zabita"
 
 #: game/combat.msg:408
-#, fuzzy
-#| msgid "hit"
 msgctxt "female_npc"
 msgid "hit"
 msgstr "byla zasažena"
@@ -202365,8 +202294,6 @@ msgid "lost the rest of her ammo"
 msgstr "ztratila zbytek munice"
 
 #: game/combat.msg:418
-#, fuzzy
-#| msgid "fired a dud shot"
 msgctxt "female_npc"
 msgid "fired a dud shot"
 msgstr "vystřelila naprázdno"
@@ -202376,22 +202303,16 @@ msgid "hurt herself"
 msgstr "zranila sama sebe"
 
 #: game/combat.msg:420
-#, fuzzy
-#| msgid "hit randomly"
 msgctxt "female_npc"
 msgid "hit randomly"
 msgstr "náhodně zasáhla"
 
 #: game/combat.msg:421
-#, fuzzy
-#| msgid "crippled a random limb"
 msgctxt "female_npc"
 msgid "crippled a random limb"
 msgstr "jedna z jejích končetin byla zmrzačena"
 
 #: game/combat.msg:422
-#, fuzzy
-#| msgid "peppered with fragments"
 msgctxt "female_npc"
 msgid "peppered with fragments"
 msgstr "byla zasypána střepinami"
@@ -202469,123 +202390,89 @@ msgid "%s critically missed and took %d hit points"
 msgstr "%s nešikovně míjí a navíc se zraněním za %d hit bodů"
 
 #: game/combat.msg:559
-#, fuzzy
-#| msgid "Oops! %s were hit instead of %s!"
 msgctxt "female_pc"
 msgid "Oops! %s were hit instead of %s!"
-msgstr "Jejda! %s byl zasažen namísto cíle %s!"
+msgstr "Jejda! %s byla zasažena namísto %s!"
 
 #: game/combat.msg:561
-#, fuzzy
-#| msgid "%s were critically hit in %s for %d hit points"
 msgctxt "female_pc"
 msgid "%s were critically hit in %s for %d hit points"
-msgstr "%s byl kriticky zasažen %s a ztratil %d bodů zdraví"
+msgstr "%s byla kriticky zasažena do %s a ztratila %d bodů zdraví"
 
 #: game/combat.msg:562
-#, fuzzy
-#| msgid "%s were hit in %s for %d hit points"
 msgctxt "female_pc"
 msgid "%s were hit in %s for %d hit points"
-msgstr "Zásah do: %s. Zasaženo: %s. Ztráta %d bodů zdraví"
+msgstr "%s byla zasažena do %s , ztratila %d bodů zdraví"
 
 #: game/combat.msg:563
-#, fuzzy
-#| msgid "%s were hit for %d hit points"
 msgctxt "female_pc"
 msgid "%s were hit for %d hit points"
-msgstr "Cíl %s byl zasažen a ztratil %d bodů zdraví"
+msgstr "%s byla zasažena a ztratila %d bodů zdraví"
 
 #: game/combat.msg:564
-#, fuzzy
-#| msgid "%s critically missed"
 msgctxt "female_pc"
 msgid "%s critically missed"
-msgstr "%s: nešikovně míjí"
+msgstr "%s kriticky minula"
 
 #: game/combat.msg:565
-#, fuzzy
-#| msgid "%s missed"
 msgctxt "female_pc"
 msgid "%s missed"
-msgstr "%s míjí"
+msgstr "%s minula"
 
 #: game/combat.msg:570
-#, fuzzy
-#| msgid "%s were critically hit for %d hit points"
 msgctxt "female_pc"
 msgid "%s were critically hit for %d hit points"
-msgstr "%s byl kriticky zasažen a ztratil %d hit bodů"
+msgstr "%s byla kriticky zasažena a ztratila %d bodů"
 
 #: game/combat.msg:571
-#, fuzzy
-#| msgid "%s were critically hit in %s for 1 hit point"
 msgctxt "female_pc"
 msgid "%s were critically hit in %s for 1 hit point"
-msgstr "%s byla kriticky zasažena %s a ztratila 1 bod zdraví"
+msgstr "%s byla kriticky zasažena do %s a ztratila 1 bod zdraví"
 
 #: game/combat.msg:572
-#, fuzzy
-#| msgid "%s were hit in %s for 1 hit point"
 msgctxt "female_pc"
 msgid "%s were hit in %s for 1 hit point"
-msgstr "%s byl zasažen %s a ztratila 1 bod zdraví"
+msgstr "%s byal zasažena do %s a ztratila 1 bod zdraví"
 
 #: game/combat.msg:573
-#, fuzzy
-#| msgid "%s were hit for 1 hit point"
 msgctxt "female_pc"
 msgid "%s were hit for 1 hit point"
-msgstr "%s byl zasažen a ztratil 1 bod zdraví"
+msgstr "%s byla zasažena a ztratil 1 bod zdraví"
 
 #: game/combat.msg:574
-#, fuzzy
-#| msgid "%s were critically hit for 1 hit point"
 msgctxt "female_pc"
 msgid "%s were critically hit for 1 hit point"
-msgstr "%s byl kriticky zasažen a ztratil 1 bod zdraví"
+msgstr "%s byla kriticky zasažena a ztratila 1 bod zdraví"
 
 #: game/combat.msg:575
-#, fuzzy
-#| msgid "%s were critically hit in %s for no damage"
 msgctxt "female_pc"
 msgid "%s were critically hit in %s for no damage"
-msgstr "%s byl kriticky zasažen %s, ale útok nezpůsobil žádná zranění"
+msgstr "%s byla kriticky zasažena %s, ale útok nezpůsobil žádná zranění"
 
 #: game/combat.msg:576
-#, fuzzy
-#| msgid "%s were hit in %s for no damage"
 msgctxt "female_pc"
 msgid "%s were hit in %s for no damage"
-msgstr "% byl zasažen %s, ale útok nezpůsobil žádná zranění"
+msgstr "%s byla zasažena do %s, ale útok nezpůsobil žádná zranění"
 
 #: game/combat.msg:577
-#, fuzzy
-#| msgid "%s were hit for no damage"
 msgctxt "female_pc"
 msgid "%s were hit for no damage"
-msgstr "%s byl zasažen, ale útok nezpůsobil žádná zranění"
+msgstr "%s byla zasažena, ale útok nezpůsobil žádná zranění"
 
 #: game/combat.msg:578
-#, fuzzy
-#| msgid "%s were critically hit for no damage"
 msgctxt "female_pc"
 msgid "%s were critically hit for no damage"
-msgstr "%s byl kriticky zasažen, ale útok nezpůsobil žádná zranění"
+msgstr "%s byla kriticky zasažena, ale útok nezpůsobil žádná zranění"
 
 #: game/combat.msg:583
-#, fuzzy
-#| msgid "%s critically missed and took 1 hit point"
 msgctxt "female_pc"
 msgid "%s critically missed and took 1 hit point"
-msgstr "%s nešikovně míjí a navíc se zraněním za1 hit bod"
+msgstr "%s kriticky minula a ztratila 1 bod zdraví"
 
 #: game/combat.msg:584
-#, fuzzy
-#| msgid "%s critically missed and took %d hit points"
 msgctxt "female_pc"
 msgid "%s critically missed and took %d hit points"
-msgstr "%s nešikovně míjí a navíc se zraněním za %d hit bodů"
+msgstr "%s kriticky minula a ztratila %d bodů zdraví"
 
 #: game/combat.msg:608
 msgid "Oops! %s was hit instead of you!"
@@ -202644,130 +202531,94 @@ msgid "%s was critically hit for no damage"
 msgstr "Kritický zásah do: %s. Útok nezpůsobil žádné zranění."
 
 #: game/combat.msg:708
-#, fuzzy
-#| msgid "Oops! %s was hit instead of you!"
 msgctxt "female_npc"
 msgid "Oops! %s was hit instead of you!"
-msgstr "Jejda! %s byl zasažen místo tebe!"
+msgstr "Jejda! %s byla zasažena místo tebe!"
 
 #: game/combat.msg:709
-#, fuzzy
-#| msgid "Oops! %s was hit instead of %s!"
 msgctxt "female_npc"
 msgid "Oops! %s was hit instead of %s!"
-msgstr "Jejda! Mířeno do: %s. Zasaženo: %s!"
+msgstr "Jejda! %s byla zasažena místo %s!"
 
 #: game/combat.msg:711
-#, fuzzy
-#| msgid "%s was critically hit in %s for %d hit points"
 msgctxt "female_npc"
 msgid "%s was critically hit in %s for %d hit points"
-msgstr "Kritický zásah do: %s. Trefeno: %s. Ztráta %d hit bodů"
+msgstr "%s byla kriticky zasažena do %s a ztratila %d bodů zdraví"
 
 #: game/combat.msg:712
-#, fuzzy
-#| msgid "%s was hit in %s for %d hit points"
 msgctxt "female_npc"
 msgid "%s was hit in %s for %d hit points"
-msgstr "Zásah do: %s. Trefeno: %s. Ztráta %d hit bodů"
+msgstr "%s byla zasažena do %s a ztratila %d bodů zdraví"
 
 #: game/combat.msg:713
-#, fuzzy
-#| msgid "%s was hit for %d hit points"
 msgctxt "female_npc"
 msgid "%s was hit for %d hit points"
-msgstr "Zásah do: %s se ztrátou %d hit bodů"
+msgstr "%s byla zasažena a ztratila %d bodů zdraví"
 
 #: game/combat.msg:714
-#, fuzzy
-#| msgid "%s critically missed"
 msgctxt "female_npc"
 msgid "%s critically missed"
-msgstr "%s: nešikovně míjí"
+msgstr "%s kriticky minula"
 
 #: game/combat.msg:715
-#, fuzzy
-#| msgid "%s missed"
 msgctxt "female_npc"
 msgid "%s missed"
-msgstr "%s míjí"
+msgstr "%s minula"
 
 #: game/combat.msg:720
-#, fuzzy
-#| msgid "%s was critically hit for %d hit points"
 msgctxt "female_npc"
 msgid "%s was critically hit for %d hit points"
-msgstr "Kritický zásah do: %s se ztrátou %d hit bodů"
+msgstr "%s byla kriticky zasažena a ztratila %d bodů zdraví"
 
 #: game/combat.msg:721
-#, fuzzy
-#| msgid "%s was critically hit in %s for 1 hit point"
 msgctxt "female_npc"
 msgid "%s was critically hit in %s for 1 hit point"
-msgstr "Kritický zásah do: %s se ztrátou 1 hit bodu. Místo zásahu: %s"
+msgstr "%s byla kriticky zasažena do %s a ztratila 1 bod zdraví"
 
 #: game/combat.msg:722
-#, fuzzy
-#| msgid "%s was hit in %s for 1 hit point"
 msgctxt "female_npc"
 msgid "%s was hit in %s for 1 hit point"
-msgstr "Zásah do: %s se ztrátou 1 hit bodu. Místo zásahu: %s"
+msgstr "%s byla zasažena do %s a ztratila 1 bod zdraví"
 
 #: game/combat.msg:723
-#, fuzzy
-#| msgid "%s was hit for 1 hit point"
 msgctxt "female_npc"
 msgid "%s was hit for 1 hit point"
-msgstr "Zásah do: %s se ztrátou 1 hit bodu"
+msgstr "%s byla zasažena a ztratila 1 bod zdraví"
 
 #: game/combat.msg:724
-#, fuzzy
-#| msgid "%s was critically hit for 1 hit point"
 msgctxt "female_npc"
 msgid "%s was critically hit for 1 hit point"
-msgstr "Kritický zásah do: %s se ztrátou 1 hit bodu"
+msgstr "%s byla kriticky zasažena a ztratila 1 bod zdraví"
 
 #: game/combat.msg:725
-#, fuzzy
-#| msgid "%s was critically hit in %s for no damage"
 msgctxt "female_npc"
 msgid "%s was critically hit in %s for no damage"
-msgstr "Kritický zásah do: %s. Útok nezpůsobil žádné zranění. Místo zásahu %s"
+msgstr "%s byla kriticky zasažena do %s, ale útok nezpůsobil žádné zranění"
 
 #: game/combat.msg:726
-#, fuzzy
-#| msgid "%s was hit in %s for no damage"
 msgctxt "female_npc"
 msgid "%s was hit in %s for no damage"
-msgstr "Zásah do: %s. Útok nezpůsobil žádné zranění. Místo zásahu %s"
+msgstr "%s byla zasažena do %s, ale útok nezpůsobil žádné zranění"
 
 #: game/combat.msg:727
-#, fuzzy
-#| msgid "%s was hit for no damage"
 msgctxt "female_npc"
 msgid "%s was hit for no damage"
-msgstr "Zásah do: %s. Útok nezpůsobil žádné zranění"
+msgstr "%s byla zasažena, ale útok nezpůsobil žádné zranění"
 
 #: game/combat.msg:728
-#, fuzzy
-#| msgid "%s was critically hit for no damage"
 msgctxt "female_npc"
 msgid "%s was critically hit for no damage"
-msgstr "Kritický zásah do: %s. Útok nezpůsobil žádné zranění."
+msgstr "%s byla kriticky zasažena, ale útok nezpůsobil žádné zranění"
 
 #: game/combat.msg:733
-#, fuzzy
-#| msgid "%s critically missed and took 1 hit point"
 msgctxt "female_npc"
 msgid "%s critically missed and took 1 hit point"
-msgstr "%s nešikovně míjí a navíc se zraněním za1 hit bod"
+msgstr "%s kriticky minula a ztratila 1 bod zdraví"
 
 #: game/combat.msg:734
-#, fuzzy
-#| msgid "%s critically missed and took %d hit points"
 msgctxt "female_npc"
 msgid "%s critically missed and took %d hit points"
-msgstr "%s nešikovně míjí a navíc se zraněním za %d hit bodů"
+msgstr "%s kriticky minula a ztratila %d bodů zdraví"
 
 #: game/combat.msg:1110 game/combat.msg:1150 game/combat.msg:1160
 #: game/combat.msg:1180 game/combat.msg:1190 game/combat.msg:1210
@@ -211927,11 +211778,9 @@ msgid "Unarmed Damage"
 msgstr "Boj beze zbraně"
 
 #: game/editor.msg:304
-#, fuzzy
-#| msgid "Melee Damage"
 msgctxt "editor"
 msgid "Melee Damage"
-msgstr "Boj zblízka"
+msgstr "Poškození v boji zblízka"
 
 #: game/editor.msg:305
 msgid "Damage Res.  "
@@ -212876,7 +212725,9 @@ msgstr "Dlouhá"
 
 #: game/k_alcohl.msg:1
 msgid "You have become addicted to alcohol. The thirst for alcohol will soon consume you. You lost 1 Agility and 1 Charisma"
-msgstr "Vypěstoval sis závislost na alkoholu. Žízeň po něm tě brzy pohltí. Přicházíš o 1 bod hbitosti a 1 bod charismatu."
+msgstr ""
+"Vypěstoval sis závislost na alkoholu. Žízeň po něm tě brzy pohltí. Ztratil "
+"jsi 1 bod hbitosti a 1 bod charismy."
 
 #: game/k_alcohl.msg:2
 msgid "The cravings are getting worse."
@@ -212887,10 +212738,10 @@ msgid "You've got the shakes. You have this intense urge to drink something with
 msgstr "Třeseš se. Máš silnou touhu vypít něco alkoholického."
 
 #: game/k_alcohl.msg:4
-#, fuzzy
-#| msgid "You feel as if a great burden has been lifted from your mind. No longer do you crave the need to drink alcohol."
 msgid "You feel as if a great burden has been lifted from your mind. No longer do you feel the need to drink alcohol. You regained 1 Agility and 1 Charisma"
-msgstr "Cítíš se, jako by z tebe spadl velký kámen. Už nemáš touhu pít alkohol."
+msgstr ""
+"Cítíš se, jako by z tebe spadl velký kámen. Už nemáš touhu pít alkohol. "
+"Získal jsi zpět 1 bod hbitosti a 1 bod charizmy"
 
 #: game/k_tragic.msg:1000
 msgid "You cannot think straight. You feel a burning desire to open another box of Tragic cards."
