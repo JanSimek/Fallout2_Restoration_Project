@@ -1,0 +1,227 @@
+// Automatically moves party members out of the way when they block the
+// player's click-to-move path (outside of combat).
+//
+// Flow:
+// 1. HOOK_MOUSECLICK (left button release, move cursor) remembers the clicked tile.
+// 2. Next frame, if the engine didn't start moving the dude and the only thing
+//    blocking the path are party members, those standing on the path step aside.
+// 3. Once they're done stepping aside, the dude's move is re-issued.
+
+#define SCRIPT_REALNAME "gl_autopush"
+#include "../headers/define.h"
+#include "../headers/command.h"
+#include "../headers/animcomd.h"
+#include "../sfall/define_extra.h"
+#include "../sfall/dik.h"
+
+// Matches fallout2.cfg [preferences] running=0: walk by default, Shift runs.
+#define AUTOPUSH_RUN_BY_DEFAULT (0)
+
+#define STATE_IDLE              (0)
+#define STATE_CHECK             (1)
+#define STATE_WAIT              (2)
+
+// Give up waiting for party members to step aside after this many frames.
+#define WAIT_MAX_FRAMES         (90)
+// A side step must be reachable in this many hexes.
+#define SIDE_STEP_MAX_PATH      (3)
+
+procedure start;
+procedure mouseclick_handler;
+procedure try_push;
+procedure wait_for_pushed;
+procedure reset_state;
+procedure tile_is_free(variable tile, variable path_tiles, variable reserved);
+procedure find_step_aside_tile(variable critter, variable path_tiles, variable reserved);
+
+variable
+   ap_state,
+   ap_dest_tile,
+   ap_dest_elev,
+   ap_run_move,
+   ap_wait_frames,
+   ap_pushed;
+
+procedure start begin
+   if game_loaded then begin
+      if not(upu_msetting(set_party_autopush)) then return;
+      ap_pushed := create_array(0, 0);
+      call reset_state;
+      register_hook_proc(HOOK_MOUSECLICK, mouseclick_handler);
+   end else if ap_state == STATE_CHECK then begin
+      if try_push then begin
+         ap_state := STATE_WAIT;
+         ap_wait_frames := 0;
+      end else begin
+         call reset_state;
+      end
+   end else if ap_state == STATE_WAIT then begin
+      call wait_for_pushed;
+   end
+end
+
+procedure mouseclick_handler begin
+   variable pressed := get_sfall_arg;
+   variable button := get_sfall_arg;
+
+   // Engine starts the move on left button release.
+   if pressed or button != 0 then return;
+   // Normal map mode only (this also excludes combat).
+   if get_game_mode != 0 then return;
+   // Move (hex) cursor only.
+   if get_cursor_mode != 0 then return;
+   // Ignore clicks on the interface bar.
+   if get_mouse_y >= get_screen_height - 100 then return;
+
+   ap_dest_tile := tile_under_cursor;
+   if ap_dest_tile < 0 or ap_dest_tile == dude_tile then return;
+
+   ap_dest_elev := dude_elevation;
+   ap_run_move := AUTOPUSH_RUN_BY_DEFAULT;
+   if key_pressed(DIK_LSHIFT) or key_pressed(DIK_RSHIFT) then ap_run_move := not(ap_run_move);
+
+   ap_state := STATE_CHECK;
+   set_global_script_repeat(1);
+end
+
+// Returns true if some party members were told to step aside.
+procedure try_push begin
+   variable party, flags, path, path_tiles, reserved, blockers, targets;
+   variable i, tm, tile, rot, side;
+
+   // Engine found a path on its own.
+   if anim_busy(dude_obj) then return false;
+   if dude_elevation != ap_dest_elev then return false;
+   if get_game_mode != 0 then return false;
+
+   // Something other than party members (or nothing at all) is the problem.
+   if len_array(path_find_to(dude_obj, ap_dest_tile, BLOCKING_TYPE_BLOCK)) > 0 then return false;
+
+   // Find the path the dude would take if party members didn't block.
+   party := party_member_list_critters;
+   flags := temp_array(len_array(party), 0);
+   for (i := 0; i < len_array(party); i++) begin
+      tm := party[i];
+      flags[i] := get_flags(tm);
+      if tm != dude_obj then set_flags(tm, flags[i] bwor FLAG_NOBLOCK);
+   end
+   path := path_find_to(dude_obj, ap_dest_tile, BLOCKING_TYPE_BLOCK);
+   for (i := 0; i < len_array(party); i++) begin
+      tm := party[i];
+      if tm != dude_obj then set_flags(tm, flags[i]);
+   end
+
+   if len_array(path) == 0 then return false;
+
+   path_tiles := temp_array(len_array(path), 0);
+   tile := dude_tile;
+   i := 0;
+   foreach (rot in path) begin
+      tile := tile_num_in_direction(tile, rot, 1);
+      path_tiles[i] := tile;
+      i++;
+   end
+
+   // Pick a free tile for every party member standing on the path first, so
+   // that nobody moves unless everyone can.
+   reserved := temp_array(0, 0);
+   blockers := temp_array(0, 0);
+   targets := temp_array(0, 0);
+   foreach (tm in party) begin
+      if tm != dude_obj and elevation(tm) == ap_dest_elev
+         and scan_array(path_tiles, tile_num(tm)) != -1 then begin
+         if critter_state(tm) != CRITTER_IS_NORMAL then begin
+            ndebug("blocker " + obj_name(tm) + " can't move");
+            return false;
+         end
+
+         side := find_step_aside_tile(tm, path_tiles, reserved);
+         if side == -1 then begin
+            ndebug("no free tile for " + obj_name(tm));
+            return false;
+         end
+
+         i := len_array(blockers);
+         resize_array(blockers, i + 1);
+         resize_array(targets, i + 1);
+         resize_array(reserved, i + 1);
+         blockers[i] := tm;
+         targets[i] := side;
+         reserved[i] := side;
+      end
+   end
+
+   if len_array(blockers) == 0 then return false;
+
+   resize_array(ap_pushed, len_array(blockers));
+   for (i := 0; i < len_array(blockers); i++) begin
+      tm := blockers[i];
+      reg_anim_begin();
+      reg_anim_obj_run_to_tile(tm, targets[i], -1);
+      reg_anim_end();
+      ap_pushed[i] := tm;
+   end
+
+   return true;
+end
+
+procedure wait_for_pushed begin
+   variable tm, busy := false;
+
+   ap_wait_frames++;
+   foreach (tm in ap_pushed) begin
+      if anim_busy(tm) then busy := true;
+   end
+   if busy and ap_wait_frames < WAIT_MAX_FRAMES then return;
+
+   // Don't override a move the player started in the meantime.
+   if not(anim_busy(dude_obj)) and get_game_mode == 0 and dude_elevation == ap_dest_elev then begin
+      reg_anim_begin();
+      if ap_run_move then
+         reg_anim_obj_run_to_tile(dude_obj, ap_dest_tile, -1);
+      else
+         reg_anim_obj_move_to_tile(dude_obj, ap_dest_tile, -1);
+      reg_anim_end();
+   end
+
+   call reset_state;
+end
+
+procedure reset_state begin
+   ap_state := STATE_IDLE;
+   resize_array(ap_pushed, 0);
+   set_global_script_repeat(0);
+end
+
+procedure tile_is_free(variable tile, variable path_tiles, variable reserved) begin
+   if tile < 0 or tile == dude_tile or tile == ap_dest_tile then return false;
+   if scan_array(path_tiles, tile) != -1 then return false;
+   if scan_array(reserved, tile) != -1 then return false;
+   if obj_blocking_tile(tile, ap_dest_elev, BLOCKING_TYPE_BLOCK) then return false;
+   return true;
+end
+
+procedure find_step_aside_tile(variable critter, variable path_tiles, variable reserved) begin
+   variable from := tile_num(critter);
+   variable base := rotation_to_tile(dude_tile, from);
+   variable offset, tile, len;
+
+   // Prefer stepping sideways, then back towards the dude, like the vanilla push.
+   foreach (offset in [1, 5, 2, 4, 3, 0]) begin
+      tile := tile_num_in_direction(from, (base + offset) % 6, 1);
+      if tile_is_free(tile, path_tiles, reserved) then begin
+         len := len_array(path_find_to(critter, tile, BLOCKING_TYPE_BLOCK));
+         if len > 0 and len <= SIDE_STEP_MAX_PATH then return tile;
+      end
+   end
+
+   // Nowhere to step aside (e.g. a one-hex corridor): walk out past the destination.
+   for (offset := 0; offset < 6; offset++) begin
+      tile := tile_num_in_direction(ap_dest_tile, offset, 1);
+      if tile_is_free(tile, path_tiles, reserved) then begin
+         if len_array(path_find_to(critter, tile, BLOCKING_TYPE_BLOCK)) > 0 then return tile;
+      end
+   end
+
+   return -1;
+end
